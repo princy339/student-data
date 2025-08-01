@@ -1,0 +1,7 @@
+<h2 class="mt-4">Calculated Percentage</h2>
+
+<p>Marks: {{ student().marks }}</p>
+<p>Name: {{ student().name }}</p>
+<p>Address: {{ student().address }}</p>
+<p>Total Marks: 500</p>
+<p>Percentage: {{ percentage() | number:'1.2-2' }}%</p>

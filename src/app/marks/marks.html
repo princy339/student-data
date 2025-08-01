@@ -1,0 +1,24 @@
+<h2 class="mbt-4">Enter Student Details</h2>
+
+<form class="p-4 border rounded bg-light">
+  <div class="mb-3">
+    <label class="form-label">
+      Name:
+      <input type="text" class="form-control" [(ngModel)]="student.name" name="name" (ngModelChange)="onInputChange()" required />
+    </label>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">
+      Address:
+      <input type="text" class="form-control" [(ngModel)]="student.address" name="address" (ngModelChange)="onInputChange()" required />
+    </label>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">
+      Marks:
+      <input type="number" class="form-control" [(ngModel)]="student.marks" name="marks" (ngModelChange)="onInputChange()" required />
+    </label>
+  </div>
+</form>
