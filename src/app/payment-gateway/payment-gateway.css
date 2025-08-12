@@ -1,0 +1,78 @@
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 20px;
+}
+
+.payment-summary {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.payment-methods {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.form-check-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.form-check-label:hover {
+  background-color: #e9ecef;
+}
+
+.form-check-label i {
+  margin-right: 8px;
+  color: #28a745;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+}
+
+.form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 10px 12px;
+}
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 4px 6px;
+}
+
+.text-muted {
+  color: #6c757d !important;
+} 

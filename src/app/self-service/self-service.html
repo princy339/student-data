@@ -1,0 +1,53 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center mb-4">Self Service Portal (SS)</h2>
+      <p class="text-center text-muted">Client-Side Rendered - Interactive Services</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <h4>Available Services</h4>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6 mb-3" *ngFor="let service of services">
+              <div class="service-card" (click)="selectService(service)">
+                <div class="service-icon">
+                  <i class="bi bi-{{ service.icon }}"></i>
+                </div>
+                <div class="service-info">
+                  <h5>{{ service.name }}</h5>
+                  <span class="badge bg-{{ getStatusColor(service.status) }}">
+                    {{ service.status }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h4>Selected Service</h4>
+        </div>
+        <div class="card-body">
+          <div *ngIf="selectedService; else noSelection">
+            <h5>{{ selectedService.name }}</h5>
+            <p>Status: <span class="badge bg-{{ getStatusColor(selectedService.status) }}">{{ selectedService.status }}</span></p>
+            <button class="btn btn-primary">Access Service</button>
+          </div>
+          <ng-template #noSelection>
+            <p class="text-muted">Select a service from the list</p>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 

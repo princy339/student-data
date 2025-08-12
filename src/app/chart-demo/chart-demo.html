@@ -1,0 +1,35 @@
+<div class="chart-container">
+  <div class="chart-header">
+    <h2>Student Grade Distribution</h2>
+    <p>Pie Chart with Smart Labels showing student performance distribution</p>
+  </div>
+
+  <div class="chart-section" *ngIf="isBrowser">
+    <div class="chart-title">
+      <h3>Grade Distribution Analysis</h3>
+      <div class="chart-controls">
+        <button class="btn btn-primary btn-sm" (click)="updateChartData([30, 40, 25, 10, 5])">
+          Update Data
+        </button>
+      </div>
+    </div>
+    <div class="chart-wrapper">
+      <canvas baseChart
+        [data]="pieChartData"
+        [options]="pieChartOptions"
+        [type]="pieChartType">
+      </canvas>
+    </div>
+  </div>
+
+  <div class="chart-info">
+    <h4>Smart Label Features</h4>
+    <ul>
+      <li>Data labels with automatic positioning</li>
+      <li>Percentage calculations</li>
+      <li>Interactive tooltips</li>
+      <li>Responsive design</li>
+      <li>Collision detection</li>
+    </ul>
+  </div>
+</div>
