@@ -3,7 +3,7 @@ import { Marks } from './marks/marks';
 import { Percent } from './percent/percent';
 import { ChartDemo } from './chart-demo/chart-demo';
 import { SelfService } from './self-service/self-service';
-import { PaymentGateway } from './payment-gateway/payment-gateway';
+import { PaymentDashboard } from './payment-dashboard/payment-dashboard';
 import { Analytics } from './analytics/analytics';
 
 export const routes: Routes = [
@@ -11,7 +11,7 @@ export const routes: Routes = [
   { path: 'percent', component: Percent },
   { path: 'charts', component: ChartDemo },
   { path: 'self-service', component: SelfService },
-  { path: 'payment-gateway', component: PaymentGateway },
+  { path: 'payment-dashboard', component: PaymentDashboard },
   { path: 'analytics', component: Analytics },
   { path: '', redirectTo: 'marks', pathMatch: 'full' }
 ]

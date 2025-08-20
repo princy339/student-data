@@ -52,34 +52,6 @@
             </div>
           </div>
 
-          <div class="row mt-4" *ngIf="selectedMethod === 'credit' || selectedMethod === 'debit'">
-            <div class="col-12">
-              <h5>Card Details</h5>
-              <div class="row">
-                <div class="col-md-6 mb-3">
-                  <label class="form-label">Card Number</label>
-                  <input type="text" class="form-control" [(ngModel)]="cardNumber" 
-                         placeholder="1234 5678 9012 3456">
-                </div>
-                <div class="col-md-6 mb-3">
-                  <label class="form-label">Card Holder Name</label>
-                  <input type="text" class="form-control" [(ngModel)]="cardHolder" 
-                         placeholder="John Doe">
-                </div>
-                <div class="col-md-4 mb-3">
-                  <label class="form-label">Expiry Date</label>
-                  <input type="text" class="form-control" [(ngModel)]="expiryDate" 
-                         placeholder="MM/YY">
-                </div>
-                <div class="col-md-4 mb-3">
-                  <label class="form-label">CVV</label>
-                  <input type="password" class="form-control" [(ngModel)]="cvv" 
-                         placeholder="123">
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="text-center mt-4">
             <button class="btn btn-success btn-lg" (click)="processPayment()">
               <i class="bi bi-shield-check"></i>

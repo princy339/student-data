@@ -4,17 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-payment-gateway',
+  selector: 'app-payment-dashboard',
   imports: [CommonModule, FormsModule, RouterModule],
   standalone: true,
-  templateUrl: './payment-gateway.html',
-  styleUrl: './payment-gateway.css'
+  templateUrl: './payment-dashboard.html',
+  styleUrl: './payment-dashboard.css'
 })
-export class PaymentGateway {
+export class PaymentDashboard {
   paymentMethods = [
-    { id: 'credit', name: 'Credit Card', icon: 'credit-card', secure: true },
-    { id: 'debit', name: 'Debit Card', icon: 'credit-card', secure: true },
-    { id: 'upi', name: 'UPI Payment', icon: 'phone', secure: true },
     { id: 'netbanking', name: 'Net Banking', icon: 'bank', secure: true }
   ];
 
